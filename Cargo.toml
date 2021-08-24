@@ -1,0 +1,18 @@
+[package]
+name = "p2p-database"
+version = "0.1.0"
+edition = "2018"
+repository = "https://github.com/dbidwell94/wasm-p2p-database"
+license = "APACHE 2.0"
+description = "A Rust WASM browser based project which allows the p2p sharing of a decentralized database"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+wasm-bindgen = "*"
+web-sys = {version = "*", features = ["Window", "WebSocket"]}
+js-sys = "*"
+chrono = "*"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
